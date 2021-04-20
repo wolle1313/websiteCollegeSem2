@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/522c1253d4.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Strona JS</title>
+</head>
+<body> 
+    <div class="menu pcM">
+        <a href="#" class="menuB" id="header"><span>Informacje <i class="fas fa-question-circle"></i></span></a>
+        <a href="#" class="menuB" id="section"><span>Bary <i class="fas fa-utensils"></i></span></a>
+        <a href="#" class="menuB" id="main"><span>Losowanie <i class="fas fa-random"></i></span></a>
+        <a href="#" class="menuB" id="footer"><span>Stopka <i class="fas fa-link"></i></span></a>
+    </div>  
+    <div class="phoneM menu ">
+        <a href="#" class="menuB" id="header"><span><i class="fas fa-question-circle"></i></span></a>
+        <a href="#" class="menuB" id="section"><span><i class="fas fa-utensils"></i></span></a>
+        <a href="#" class="menuB" id="main"><span><i class="fas fa-random"></i></span></a>
+        <a href="#" class="menuB" id="footer"><span><i class="fas fa-link"></i></span></a>
+    </div> 
+    <div class="wrapper">
+        <div class="banner">
+            <img src="pics/banner.jpg">
+        </div>
+        
+        <header>
+            <div class="introT"><span>Witaj na stronie stworzonej przez Oliwiera Orlika. Strona ma 3 sekcje prezenujące kilka podstawowych rozwiązań używanych prawie na każdej stronie którą można obecnie spotkać.</span>
+            <span><br><br>Języki z których korzystam to:</span>
+            </div>
+            <div class="progPics"><img class="flyinPics" src="pics/iconhtml.png"><img class="flyinPics"  src="pics/iconcss.png"><img class="flyinPics"  src="pics/iconjs.png"></div>
+        </header>
+        <section>
+            <div class="introT">
+                <span>Strona jest poświęcona...</span>
+                <span><br>Restauracjom chińskim w Pisecznie!</span>
+                
+            <span><br><br>Oceniane restauracje:</span>
+            </div>
+            <div class="bars">
+            <div class="bar">
+                <img src="pics/maimai.jpg">
+                <span>Mai-mai</span>
+                <span>Średnia ocena gwiazdek: </span><span class="click" id="maimaiS">Pokaż</span>
+                <span>Ilość ocen: </span><span class="click" id="maimaiN">Pokaż</span>
+            </div>
+            <div class="bar">
+                <img src="pics/sajgonek.jpg">
+                <span>Sajgonek</span>
+                <span>Średnia ocena gwiazdek: </span><span class="click" id="sajgonekS">Pokaż</span>
+                <span>Ilość ocen: </span><span class="click" id="sajgonekN">Pokaż</span>
+            </div>
+            <div class="bar">
+                <img src="pics/phuongnam.jpg">
+                <span>Phuong-Nam</span>
+                <span>Średnia ocena gwiazdek: </span><span class="click" id="phuongnamS">Pokaż</span>
+                <span>Ilość ocen: </span><span class="click" id="phuongnamN">Pokaż</span>
+            </div>
+            <div class="bar">
+                <img src="pics/vanson.jpg">
+                <span>Van Son</span>
+                <span>Średnia ocena gwiazdek: </span><span class="click" id="vansonS">Pokaż</span>
+                <span>Ilość ocen: </span><span class="click" id="vansonN">Pokaż</span>
+            </div>
+            </div>
+        </section>
+        <main>
+           <span class="introT"> Nie wiesz co wybrać? Kliknij guzik żeby wylosować!</span>
+           <button class="btnRandom">Losuj!</button>
+           <div class="barR">
+            <img class="imgRandom" src="">
+            <span class="spanRandom"></span>
+        </div>
+        </main>
+        <footer>
+            <div class="links">
+                <span>Linki do restauracji: </span>
+                <a href="https://www.facebook.com/people/Bar-Azjatycki-MAI-MAI/100054275600877/">Mai-mai</a>
+                <a href="https://kuchnia-orientalna.pl/">Phuong-Nam</a>
+                <a href="http://sajgonekujarka.pl/">Sajgonek</a>
+                <a href="https://www.google.com/search?sxsrf=ALeKk03aPfZKqryJWIX3aXF-8PjiJS-Wfw:1618415326147&q=van+son+piaseczno&sa=X&ved=2ahUKEwidnfT0iv7vAhVMpIsKHce5CYEQ7xYoAHoECAEQNQ&biw=1920&bih=937">Van Son</a>
+            </div>
+            <div class="links">
+                <span>Linki do pozostałych prac: </span>
+                <a href="https://oliwierorlikgra.netlify.app/">Gra papier, kamień i nożyce</a>
+                <a href="https://oliwierorlikwordpress.netlify.app/">Word Press</a>
+                <a href="https://oliwierorlikformularz.netlify.app/">Formularz</a>
+            </div>
+            <div class="links">
+                <span>Linki do użytych rozwiązań: </span>
+                <a href="https://fontawesome.com/">Ikonki menu</a>
+                <a href="https://developers.google.com/speed/libraries#jquery">JQuery</a>
+                <a href="https://fonts.google.com/specimen/Roboto?preview.text_type=custom&sidebar.open=true&selection.family=Roboto">Czcionka: Roboto</a>
+            </div>
+        </footer>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="jqueryScript.js"></script>
+    <script src="jsScript.js"></script>
+</body>
+</html>
